@@ -1,0 +1,17 @@
+.section_container {
+    width: 100%;
+    padding: 80px 0;
+    .section_header {
+        width: 100%;
+        margin-bottom: 60px;
+        h2 {
+            color: white;
+            span {
+                color: #21E786;
+            }
+        }
+    }
+    .section_body {
+        width: 100%;
+    }
+}

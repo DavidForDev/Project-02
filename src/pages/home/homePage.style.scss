@@ -1,0 +1,39 @@
+.home_page {
+    width: 100%;
+    .banner_container {
+        width: 100%;
+        position: relative;
+        .banner_image {
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: bottom;
+                height: 600px;
+            }
+            .shadow {
+                background: #040b111c linear-gradient(to bottom, rgba(0, 0, 0, 0) 2%, #040b113d 15%, #040B11 100%, #040B11 100%) repeat scroll 0 0;
+                position: relative;
+                margin-top: -440px;
+                height: 440px;
+            }
+        }
+        .banner_title {
+            width: 100%;
+            margin: auto;
+            position: absolute;
+            bottom: 60px;
+            color: white;
+            p {
+                width: 34%;
+            }
+            .tool {
+                width: 100%;
+                margin-top: 20px;
+                transition: 1s;
+            }
+        }
+    }
+    .sections_container {
+
+    }
+}

@@ -1,0 +1,27 @@
+.story_card {
+    width: 100%;
+    position: relative;
+    background-color: #141B22;
+    padding: 30px;
+    cursor: pointer;
+    transition: 1s;
+    .list_number {
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+        color: #21e7879a;
+        font-size: 60px;
+    }
+    .story_detail {
+        position: relative;
+        margin-top: 40px;
+        h5 {
+            color: white;
+            z-index: 111;
+        }
+        p {
+            color: #C2C3C5;
+        }
+    }
+}

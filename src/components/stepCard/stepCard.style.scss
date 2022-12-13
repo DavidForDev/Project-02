@@ -1,0 +1,22 @@
+.step_card {
+    width: 100%;
+    background-color: #141B22;
+    padding: 25px 25px;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+    img {
+        margin: auto;
+        object-fit: cover;
+    }
+    .card_title {
+        color: white;
+        text-align: center;
+        h5 {
+            font-size: 22px;
+        }
+        .step {
+            color: #21E786;
+        }
+    }
+}

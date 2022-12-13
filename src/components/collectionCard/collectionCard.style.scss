@@ -1,0 +1,16 @@
+.collection_card {
+    width: 100%;
+    background-color: #141B22;
+    padding: 15px 15px;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    h4 {
+        color: white;
+        font-size: 17px;
+    }
+}

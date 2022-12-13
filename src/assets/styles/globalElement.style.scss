@@ -1,0 +1,144 @@
+body, html, #root, .wrapped, main {
+    height: 100%;
+}
+
+main {
+    padding-top: 40px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+// =========== Container ========== \\
+.general_container {
+    width: 1400px;
+    height: auto;
+    margin: auto;
+}
+
+.card_frame::after {
+    content:'';
+    position: absolute;
+    background: rgb(33,231,134);
+    box-shadow: 0px 0px 18px 1px #21e786;
+    width: 2px;
+    height: 0%;
+    top: 0;
+    left: 0;
+    animation: cardFrame 2s infinite alternate;
+    transition: 0.3s;
+}
+
+.card_frame:hover::after {
+    height: 100%;
+    transition: 0.3s;
+}
+
+@keyframes cardFrame {
+    from {
+        filter: brightness(0.5);
+    }
+    to {
+        filter: brightness(1);
+    }
+}
+
+// =========== Buttons ========== \\
+
+.primary_button {
+    background-color: #141B22;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid #141B22;
+    width: 100%;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    svg {
+        path {
+            transition: 0.3s;
+        }
+    }
+}
+
+.primary_button:hover {
+    svg {
+        path {
+            transition: 0.3s;
+            fill: #21E786;
+        }
+    }
+}
+
+.secondary_button {
+    background-color: #21E786;
+    outline: none;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #21E786;
+    padding: 12px 18px;
+    transition: 0.5s;
+    &.out_border {
+        background-color: transparent;
+        border: 1px solid #21E786;
+        color: white;
+    }
+}
+
+.secondary_button:hover {
+    background-color: transparent;
+    border-radius: 1px solid #21E786;
+    color: white;
+    transition: 0.5s;
+    svg {
+        stroke: #21E786;
+        path {
+            fill: #21E786;
+        }
+    }
+}
+
+.burger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    div {
+        width: 30px;
+        height: 3px;
+        margin: 4px;
+        background-color: white;
+    }
+    div:nth-child(1) {
+        width: 20px;
+        transition: 0.3s;
+    }
+    div:nth-child(3) {
+        width: 20px;
+        align-self: flex-end;
+        transition: 0.3s;
+    }
+}
+
+.burger:hover {
+    div:nth-child(1) {
+        width: 30px;
+    }
+    div:nth-child(3) {
+        width: 30px;
+    }
+}

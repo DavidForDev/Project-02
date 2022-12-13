@@ -1,0 +1,31 @@
+.nav {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    color: white;
+    padding: 20px 0;
+    z-index: 1111;
+    background-color: #040b11;
+    .container {
+        .nav-ul {
+            .ul-li {
+                cursor: pointer;
+            }
+        }
+        .dropdown_container {
+            width: 100%;
+            padding: 20px 0;
+            position: absolute;
+            overflow: auto;
+            left: 0;
+            right: 0;
+            bottom: -56px;
+            background-color: rgba(255, 255, 255, 0.384);
+            .drop-ul {
+                .drop-li {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
