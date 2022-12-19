@@ -44,7 +44,7 @@ const StorySection = ({data}) => {
     }, [])
 
     return ( 
-        <div ref={storyRef} className='story_container flex flex-wrap justify-between align-items-center'>
+        <div ref={storyRef} className='story_container flex flex-wrap justify-center gap-30 align-items-center'>
             <div className='story_about flex direction-column gap-30'>
                 <div className='flex direction-column gap-15'>
                     <h3 ref={h3} className='font-uppercase'>the story</h3>

@@ -14,5 +14,10 @@
                 font-size: 46px;
             }
         }
+        @media screen and (max-width: 425px) {
+            .analytics_container {
+                justify-content: center;
+            }
+        }
     }
 }
